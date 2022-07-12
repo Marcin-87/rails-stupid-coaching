@@ -1,0 +1,11 @@
+<h1>Stupid Coatching</h1>
+
+<% if @answer.downcase == 'i am going to work' %>
+    <p><%= @answer %> <br>-You<br><br>Great!<br>-Your coach</p>
+  <% elsif @answer == "?" %>
+      <p><%= @answer %> <br>-You<br><br>Silly question, get dressed and go to work!<br>-Your coach</p>
+  <% else %>%
+    <p><%= @answer %> <br>-You<br><br>I dont care, get dressed and go to work!<br>-Your coach</p>
+<% end %>
+
+<%= link_to "Ask new question", "ask" %>
